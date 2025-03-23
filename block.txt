@@ -1,0 +1,31 @@
+netsh interface ipv4 set dns "vEthernet (WSL (Hyper-V firewall))" static 185.228.168.10 primary
+netsh interface ipv4 add dns "vEthernet (WSL (Hyper-V firewall))" 185.228.169.11 index=2
+netsh interface ipv6 set dns "vEthernet (WSL (Hyper-V firewall))" static 2a0d:2a00:0001:0000:0000:0000:0000:0001 primary
+netsh interface ipv6 add dns "vEthernet (WSL (Hyper-V firewall))" 2a0d:2a00:0002:0000:0000:0000:0000:0001 index=2
+
+netsh interface ipv4 set dns "Local Area Connection* 3" static 185.228.168.10 primary
+netsh interface ipv4 add dns "Local Area Connection* 3" 185.228.169.11 index=2
+netsh interface ipv6 set dns "Local Area Connection* 3" static 2a0d:2a00:0001:0000:0000:0000:0000:0001 primary
+netsh interface ipv6 add dns "Local Area Connection* 3" 2a0d:2a00:0002:0000:0000:0000:0000:0001 index=2
+
+
+netsh interface ipv4 set dns "Local Area Connection* 4" static 185.228.168.10 primary
+netsh interface ipv4 add dns "Local Area Connection* 4" 185.228.169.11 index=2
+netsh interface ipv6 set dns "Local Area Connection* 4" static 2a0d:2a00:0001:0000:0000:0000:0000:0001 primary
+netsh interface ipv6 add dns "Local Area Connection* 4" 2a0d:2a00:0002:0000:0000:0000:0000:0001 index=2
+
+
+netsh interface ipv4 set dns "Ethernet" static 185.228.168.10 primary
+netsh interface ipv4 add dns "Ethernet" 185.228.169.11 index=2
+netsh interface ipv6 set dns "Ethernet" static 2a0d:2a00:0001:0000:0000:0000:0000:0001 primary
+netsh interface ipv6 add dns "Ethernet" 2a0d:2a00:0002:0000:0000:0000:0000:0001 index=2
+
+netsh interface ipv4 set dns "Loopback Pseudo-Interface 1" static 185.228.168.10 primary
+netsh interface ipv4 add dns "Loopback Pseudo-Interface 1" 185.228.169.11 index=2
+netsh interface ipv6 set dns "Loopback Pseudo-Interface 1" static 2a0d:2a00:0001:0000:0000:0000:0000:0001 primary
+netsh interface ipv6 add dns "Loopback Pseudo-Interface 1" 2a0d:2a00:0002:0000:0000:0000:0000:0001 index=2
+
+netsh interface ipv4 set dns "Wi-Fi" static 185.228.168.10 primary
+netsh interface ipv4 add dns "Wi-Fi" 185.228.169.11 index=2
+netsh interface ipv6 set dns "Wi-Fi" static 2a0d:2a00:0001:0000:0000:0000:0000:0001 primary
+netsh interface ipv6 add dns "Wi-Fi" 2a0d:2a00:0002:0000:0000:0000:0000:0001 index=2
